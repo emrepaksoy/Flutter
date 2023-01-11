@@ -44,7 +44,10 @@ class ScaffoldLearnView extends StatelessWidget {
         margin: const EdgeInsets.all(10),
         height: 100,
         decoration: ProjectContainerDecoration(),
-        child: const BottomBar(),
+        child: 
+         Container(
+         
+          child:const BottomBar()),
       ),
     );
   }
@@ -57,10 +60,12 @@ class Background extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
+      
           gradient: LinearGradient(colors: [Colors.red, Colors.orange])),
     );
   }
 }
+
 
 class BottomBar extends StatelessWidget {
   const BottomBar({super.key});
@@ -72,7 +77,8 @@ class BottomBar extends StatelessWidget {
       unselectedFontSize: 10,
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'button 1'),
-        BottomNavigationBarItem(icon: Icon(Icons.usb), label: 'button 2')
+        BottomNavigationBarItem(icon: Icon(Icons.usb), label: 'button 2'),
+        
       ],
       unselectedItemColor: Colors.blueAccent,
       selectedItemColor: Colors.greenAccent,
